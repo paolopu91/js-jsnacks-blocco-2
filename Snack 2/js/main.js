@@ -11,8 +11,8 @@ let listaCognomi = ["Pugliese", "Rossi" ,"Lico", "Sgavicchia", "Sambucini", "Gis
 //Creo il mio terzo array vuoto dove andrò ad inserire nomi e cognomi degli invitati
 const listaCompleta = [];
 
-console.log(listaNomi);
-console.log(listaCognomi);
+console.log(listaNomi,listaCognomi);
+
 
 
 // creo la mia variabile
