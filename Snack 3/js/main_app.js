@@ -5,6 +5,7 @@ Snack3
 
 //Creo il mio array di numeri interi
 const numeriInteri= [1,2,10,24,56,77,99,23,45]
+console.log(numeriInteri)
 
 // creo il mio ciclo
 for(let i=0; i< numeriInteri.length;i++){

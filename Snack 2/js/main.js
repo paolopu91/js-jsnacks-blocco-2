@@ -16,7 +16,7 @@ console.log(listaCognomi);
 
 
 // creo la mia variabile
-for(let i = 0 ; i < 12 ; i++){
+for(let i = 0 ; i < 5 ; i++){
 
     // tramite una costante creo il mio nuovo array, unendo i nomi e i cognomi delle prime due liste
     const nomeCompleto = listaNomi[Math.floor(Math.random()) * listaNomi.length] + " "+ listaCognomi[Math.floor(Math.random()) * listaCognomi.length];
