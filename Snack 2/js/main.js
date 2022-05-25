@@ -19,8 +19,28 @@ console.log(listaNomi,listaCognomi);
 for(let i = 0 ; i < 5 ; i++){
 
     // tramite una costante creo il mio nuovo array, unendo i nomi e i cognomi delle prime due liste
-    const nomeCompleto = listaNomi[Math.floor(Math.random()) * listaNomi.length] + " "+ listaCognomi[Math.floor(Math.random()) * listaCognomi.length];
+    const nomeCompleto = listaNomi[Math.floor(Math.random() * listaNomi.length)] + " "+ listaCognomi[Math.floor(Math.random() * listaCognomi.length)];
     listaCompleta.push(nomeCompleto);
 }
 console.log(listaCompleta)
+
+
+console.log("--------------------------------------------------")
+
+// Secondo metodo per risolvere il problema
+
+let indiceNomi = ["Valerio" , "Andrea", "Marcello", "Simone"];
+let indiceCognomi = ["Silvestri", "Chiave", "maestro", "Mondo"];
+
+const casualNameSurname=[];
+
+for(let i=0 ; i< indiceNomi.length; i++){
+
+    let num = Math.floor(Math.random() * 6); /*Qui possimao mettere anche il nome variabile.length al posto del numero*/
+    let numSecond = Math.floor(Math.random() * 6)/*Qui possimao mettere anche il nome variabile.length al posto del numero*/
+
+    const nuovoNomeCognome = indiceNomi[num]+ " " + indiceCognomi[numSecond];
+    casualNameSurname.push (nuovoNomeCognome);
+}
+console.log(casualNameSurname)
 
