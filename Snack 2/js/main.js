@@ -29,17 +29,17 @@ console.log("--------------------------------------------------")
 
 // Secondo metodo per risolvere il problema
 
-let indiceNomi = ["Valerio" , "Andrea", "Marcello", "Simone"];
-let indiceCognomi = ["Silvestri", "Chiave", "maestro", "Mondo"];
+let names = ["Valerio" , "Andrea", "Marcello", "Simone"];
+let surnames = ["Silvestri", "Chiave", "maestro", "Mondo"];
 
 const casualNameSurname=[];
 
-for(let i=0 ; i< indiceNomi.length; i++){
+for(let i=0 ; i< names.length; i++){
 
-    let num = Math.floor(Math.random() * 6); /*Qui possimao mettere anche il nome variabile.length al posto del numero*/
-    let numSecond = Math.floor(Math.random() * 6)/*Qui possimao mettere anche il nome variabile.length al posto del numero*/
+    let indiceNomi = Math.floor(Math.random() * 6); /*Qui possimao mettere anche il nome variabile.length al posto del numero*/
+    let indiceCognomi = Math.floor(Math.random() * 6)/*Qui possimao mettere anche il nome variabile.length al posto del numero*/
 
-    const nuovoNomeCognome = indiceNomi[num]+ " " + indiceCognomi[numSecond];
+    const nuovoNomeCognome = names[indiceNomi]+ " " + surnames[indiceCognomi];
     casualNameSurname.push (nuovoNomeCognome);
 }
 console.log(casualNameSurname)
